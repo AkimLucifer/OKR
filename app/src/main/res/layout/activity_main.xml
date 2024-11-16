@@ -1,0 +1,81 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Площадь параллелограмма"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Формула -->
+    <ImageView
+        android:id="@+id/formulaImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/formula"
+        android:contentDescription="Formula Image"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Ввод значения для a -->
+    <EditText
+        android:id="@+id/inputA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите a"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- Ввод значения для b -->
+    <EditText
+        android:id="@+id/inputB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите b"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- Ввод угла -->
+    <EditText
+        android:id="@+id/inputAngle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите угол (в градусах)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- Кнопка для расчета -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Рассчитать"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+    <!-- Результат -->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат: "
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
